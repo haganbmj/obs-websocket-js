@@ -94,6 +94,7 @@ async function getLatestComments(): Promise<any> {
   };
 
   if (!process.env.GH_TOKEN) {
+    // @ts-ignore
     delete headers.Authorization;
   }
 
